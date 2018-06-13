@@ -19,123 +19,60 @@ public class MemoriaDeTrabajo {
         while(tokens.hasMoreTokens()){
             siguiente = tokens.nextToken();
 
-            if(siguiente.equals("ENCONTRAR") || siguiente.equals("ENCUENTRO") || siguiente.equals("ENCUENTRA")){
-                listaClaves.add("ENCONTRAR");
+            if(siguiente.equals("FAMILY") || siguiente.equals("MOTHER") || siguiente.equals("MOM")|| siguiente.equals("MOMMY")|| siguiente.equals("FATHER")|| siguiente.equals("DAD")|| siguiente.equals("DADDY")|| siguiente.equals("BROTHER")|| siguiente.equals("SISTER")){
+                listaClaves.add("FAMILY");
             }
 
-            else if(siguiente.equals("DONDE")){
-                listaClaves.add("DONDE");
+            else if(siguiente.equals("PET")|| siguiente.equals("DOG")|| siguiente.equals("CAT")|| siguiente.equals("PUPPY")){
+                listaClaves.add("PET");
             }
-            else if(siguiente.equals("BIEN")|| siguiente.equals("JOYA")|| siguiente.equals("PERFECTO")){
-                listaClaves.add("BIEN");
+            else if(siguiente.equals("HOUSE")|| siguiente.equals("HOME")|| siguiente.equals("SCHOOL")|| siguiente.equals("JOB")|| siguiente.equals("NEIGHBORHOOD")|| siguiente.equals("STREET")|| siguiente.equals("TOWN")|| siguiente.equals("CITY")|| siguiente.equals("ADRESS")|| siguiente.equals("LIVE")|| siguiente.equals("APARTMENT")){
+                listaClaves.add("PLACE");
             }
-            else if(siguiente.equals("MAL")){
-                listaClaves.add("MAL");
+            else if(siguiente.equals("WHAT")|| siguiente.equals("WHATS")|| siguiente.equals("WHERE")|| siguiente.equals("WHERES")|| siguiente.equals("HOW")|| siguiente.equals("WHEN")|| siguiente.equals("WICH")|| siguiente.equals("WHOSE")|| siguiente.equals("WHOM")|| siguiente.equals("WHY")){
+                listaClaves.add("WHAT");
             }
-            else if(siguiente.equals("COMO")){
-                listaClaves.add("COMO");
+            else if(siguiente.equals("YOU")|| siguiente.equals("YOUR")|| siguiente.equals("HIS")|| siguiente.equals("HER")|| siguiente.equals("THEY")|| siguiente.equals("THEM")|| siguiente.equals("SHE")|| siguiente.equals("HE")|| siguiente.equals("OUR")|| siguiente.equals("THOSE")|| siguiente.equals("IT")){
+                listaClaves.add("SOMEONE");
             }
-            else if(siguiente.equals("ESTA")||siguiente.equals("ESTAS")||siguiente.equals("VA")||siguiente.equals("ANDAS")){
-                listaClaves.add("ESTAR");
+            else if(siguiente.equals("NAME")||siguiente.equals("LASTNAME")||siguiente.equals("NICKNAME")){
+                listaClaves.add("NAME");
             }
-            else if(siguiente.equals("CURSA")||siguiente.equals("CURSO")||siguiente.equals("CURSAR")){
-                listaClaves.add("CURSAR");
+            else if(siguiente.equals("OLD")){
+                listaClaves.add("OLD");
             }
-            else if(siguiente.equals("LLEGAR")|| siguiente.equals("LLEGO")){
-                listaClaves.add("LLEGAR");
+            else if(siguiente.equals("BORN")||siguiente.equals("FROM")){
+                listaClaves.add("BORN");
             }
-            else if(siguiente.equals("RENDIR")|| siguiente.equals("RINDE")|| siguiente.equals("RINDO")){
-                listaClaves.add("RENDIR");
+            else if(siguiente.equals("TEACHER")){
+                listaClaves.add("TEACHER");
             }
-            else if(siguiente.equals("HAY")){
-                listaClaves.add("HABER");
+            else if(siguiente.equals("BANK")||siguiente.equals("MONEY")||siguiente.equals("CASH")||siguiente.equals("CREDITCARD")||siguiente.equals("CARD")||siguiente.equals("DEBITCARD")||siguiente.equals("MONEY")||siguiente.equals("BILL")||siguiente.equals("DOLLAR")||siguiente.equals("GOLD")||siguiente.equals("EXPENSIVE")){
+                listaClaves.add("MONEY");
             }
-            else if(siguiente.equals("OFICINA")){
-                listaClaves.add("OFICINA");
+            else if(siguiente.equals("JEWERLY")||siguiente.equals("NECKLACE")||siguiente.equals("RING")){
+                listaClaves.add("JEWERLY");
             }
-            else if(siguiente.equals("FACULTAD")||siguiente.equals("UNIVERSIDAD")){
-                listaClaves.add("FACULTAD");
+            else if(siguiente.equals("HOBBY")||siguiente.equals("ACTIVITY")||siguiente.equals("DOING")){
+                listaClaves.add("ACTIVITY");
             }
-            else if(siguiente.equals("HOLA")|| siguiente.equals("BUENOS")|| siguiente.equals("DIAS")|| siguiente.equals("BUENAS")|| siguiente.equals("TARDES")|| siguiente.equals("NOCHES")|| siguiente.equals("BUEN")|| siguiente.equals("DIA")){
-                listaClaves.add("HOLA");
+            else if(siguiente.equals("WEAR")||siguiente.equals("CLOTHES")||siguiente.equals("WEARING")){
+                listaClaves.add("WEAR");
             }
-            else if(siguiente.equals("CHAU")|| siguiente.equals("ADIOS")|| siguiente.equals("VEMOS")|| siguiente.equals("HASTA")|| siguiente.equals("LUEGO")){
-                listaClaves.add("CHAU");
+            else if(siguiente.equals("TAKE")){
+                listaClaves.add("TAKE");
             }
-            else if(siguiente.equals("INTELIGENCIA") || siguiente.equals("ARTIFICIAL")){
-                listaClaves.add("IA");
+            else if(siguiente.equals("PICTURE")||siguiente.equals("PHOTO")||siguiente.equals("SELFIE")){
+                listaClaves.add("PHOTO");
             }
-            else if(siguiente.equals("TEORIA") || siguiente.equals("CONTROL")){
-                listaClaves.add("TC");
+            else if(siguiente.equals("SEX")||siguiente.equals("PORN")||siguiente.equals("TRIPLEX")||siguiente.equals("XXX")){
+                listaClaves.add("XXX");
             }
-            else if(siguiente.equals("INGENIERIA") || siguiente.equals("SOFTWARE")){
-                listaClaves.add("ISW");
+            else if(siguiente.equals("GO")||siguiente.equals("WENT")||siguiente.equals("GONE")||siguiente.equals("GOING")) {
+                listaClaves.add("GO");
             }
-            else if(siguiente.equals("FISICA")){
-                listaClaves.add("FISICA");
-            }
-            else if(siguiente.equals("ANALISIS") || siguiente.equals("MATEMATICO")){
-                listaClaves.add("AMII");
-            }
-            else if(siguiente.equals("GESTION")){
-                listaClaves.add("SG");
-            }
-            else if(siguiente.equals("QUIMICA")){
-                listaClaves.add("QUIMICA");
-            }
-            else if(siguiente.equals("METODOS") || siguiente.equals("AGILES")){
-                listaClaves.add("MA");
-            }
-            else if(siguiente.equals("MATEMATICA") || siguiente.equals("SUPERIOR")){
-                listaClaves.add("MS");
-            }
-            else if(siguiente.equals("GUTIERREZ")){
-                listaClaves.add("MILGUT");
-            }
-            else if(siguiente.equals("VEGA")){
-                listaClaves.add("JORGEVEGA");
-            }
-            else if(siguiente.equals("ROA")){
-                listaClaves.add("JORGEROA");
-            }
-            else if(siguiente.equals("VILLAREAL")){
-                listaClaves.add("PABLOVILLAREAL");
-            }
-            else if(siguiente.equals("LEDESMA")){
-                listaClaves.add("RODRIGOLEDESMA");
-            }
-            else if(siguiente.equals("ROMANIZ")){
-                listaClaves.add("SUSANAROMANIZ");
-            }
-            else if(siguiente.equals("CASTELLARO")){
-                listaClaves.add("MARTACASTELLARO");
-            }
-            else if(siguiente.equals("MALVA") || siguiente.equals("TOSO")){
-                listaClaves.add("MALVA");
-            }
-            else if(siguiente.equals("CALIUSCO")){
-                listaClaves.add("LAURACALIUSCO");
-            }
-            else if(siguiente.equals("BALLEJOS")){
-                listaClaves.add("LUCIANABALLEJOS");
-            }
-            else if(siguiente.equals("CIDISI")){
-                listaClaves.add("CIDISI");
-            }
-            else if(siguiente.equals("AULA")){
-                listaClaves.add("AULA18");
-            }
-            else if(siguiente.equals("POSGRADO")){
-                listaClaves.add("POSGRADO");
-            }
-            else if(siguiente.equals("DEPARTAMENTO")){
-                listaClaves.add("DPTOSISTEMAS");
-            }
-            else if(siguiente.equals("BANCO")){
-                listaClaves.add("BANCO");
-            }
-            else if(siguiente.equals("ASCENSOR")){
-                listaClaves.add("ASCENSOR");
+            else if(siguiente.equals("OUT")||siguiente.equals("OFF")) {
+                listaClaves.add("OUT");
             }
 
         }

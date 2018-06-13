@@ -92,8 +92,8 @@ public class MaquinaDeInferencia extends Solve{
             //Por cada regla tengo que verificar que la secuencia de palabras sea la misma.
             //Si es la misma entonces hay que agregar la regla a la lista a devolver.
             List<String> condiciones = r.getCondiciones();
-            //if(palabrasPercibidas.containsAll(condiciones)){
-            if((condiciones.containsAll(palabrasPercibidas))&&(condiciones.size()==palabrasPercibidas.size())){
+            if(palabrasPercibidas.containsAll(condiciones)){
+           // if((condiciones.containsAll(palabrasPercibidas))&&(condiciones.size()==palabrasPercibidas.size())){
                 listaReglasAplicables.add(r);
             }
         }
