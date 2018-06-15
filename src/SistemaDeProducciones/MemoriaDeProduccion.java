@@ -54,6 +54,7 @@ public class MemoriaDeProduccion {
         listaReglas.add(new Regla(Arrays.asList("ACTIVITY","FAMILY","WEAR"), "RECORDING CHAT", 29, 3, 4, 1));
 
         //ORDENES PELIGROSAS
+        listaReglas.add(new Regla(Arrays.asList("TAKE","PHOTO","SOMEONE"), "RECORDING CHAT, CALLING PARENTS", 30, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("TAKE","PHOTO"), "RECORDING CHAT, CALLING PARENTS", 31, 2, 5, 1));
         listaReglas.add(new Regla(Arrays.asList("TAKE","WEAR","OUT"), "DO NOT ANSWER THIS, RECORDING CHAT, CALLING PARENTS", 32, 3, 6, 1));
         listaReglas.add(new Regla(Arrays.asList("XXX"), "DO NOT ANSWER THIS, RECORDING CHAT, CALLING PARENTS", 33, 1, 8, 1));
