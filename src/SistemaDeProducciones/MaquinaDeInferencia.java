@@ -31,13 +31,12 @@ public class MaquinaDeInferencia extends Solve{
     @Override
     public Action solve(Object[] params) throws Exception {
 
+
         problema = (Problema) params[0]; //Aca tiene las palabras claves detectadas
         Regla r;
+        String logDeFases = "";
 
-        //El Do-While se saca porque en este caso resuelve el problema que tiene y luego ejecuta la accion
-        //hasta que le pregunten o digan algo nuevamente
-
-
+        // TODO: Agregar en cada etapa un String detallando lo sucedido y añadirlo al log de la Action
         /////////////////////////////
         // PRIMERA FASE:    Cotejo //
         /////////////////////////////
@@ -45,8 +44,10 @@ public class MaquinaDeInferencia extends Solve{
         List<Regla> activeRules = match();
 
         if(activeRules.isEmpty()) {
-            //ACA SE DEBERIA MOSTRAR QUE NO SE ENTIENDE QUE SE DIJO???
             return null;
+        }
+        else{
+            logDeFases = "Reglas activas: " + activeRules.toString();
         }
 
         /////////////////////////////////////////////
@@ -54,18 +55,19 @@ public class MaquinaDeInferencia extends Solve{
         /////////////////////////////////////////////
         for(Criteria i : criteria){
             Criteria actualCriteria = i;
-            System.out.println("\nCriterio:" + actualCriteria.toString());
+            System.out.println("Criterio: " + actualCriteria.toString());
+            logDeFases = logDeFases + "\nCriterio:" + actualCriteria.toString();
             List<Regla> finalRules = actualCriteria.apply(activeRules);
             if(finalRules.size()==0){
                 //System.out.print("Reglas en Conflicto: -");
                 System.out.print("No hay reglas para aplicar");
             }
             else{
-                System.out.print("Reglas en Conflicto: ");
-                //for(Iterator<Regla> j = finalRules.iterator(); j.hasNext();)
-                //{
+                System.out.print("\nReglas en Conflicto: ");
+                logDeFases = logDeFases + "\nReglas en Conflicto: ";
                 for(Regla j : finalRules){
                     System.out.print("("+j.getId()+")");
+                    logDeFases = logDeFases + "("+j.getId()+")";
                 }
                 activeRules = finalRules;
                 if(activeRules.size()==1){
@@ -73,15 +75,15 @@ public class MaquinaDeInferencia extends Solve{
                 }
             }
         }
-
-        //Se obtiene la regla elegida.
+        ////////////////////////////////
+        // TERCERA FASE:    Ejecucion //
+        ////////////////////////////////
         r = activeRules.get(0);
         this.ejecutar(r);
-        return new ProductionSystemAction(r);
+        logDeFases = logDeFases + "\nRegla a ejecutar: " + r.getId();
+        return new ProductionSystemAction(r,logDeFases);
     }
-    ////////////////////////////////
-    // TERCERA FASE:    Ejecucion //
-    ////////////////////////////////
+
     protected List<Regla> match(){
         //ACA SE DEBE HACER EL MACHEO ENTRE LA LISTA DE PALABRAS CLAVES CON TODAS LAS REGLAS PARA VER CUALES SE
         //PUEDEN EJECUTAR
@@ -93,7 +95,7 @@ public class MaquinaDeInferencia extends Solve{
             //Si es la misma entonces hay que agregar la regla a la lista a devolver.
             List<String> condiciones = r.getCondiciones();
             if(palabrasPercibidas.containsAll(condiciones)){
-           // if((condiciones.containsAll(palabrasPercibidas))&&(condiciones.size()==palabrasPercibidas.size())){
+                // if((condiciones.containsAll(palabrasPercibidas))&&(condiciones.size()==palabrasPercibidas.size())){
                 listaReglasAplicables.add(r);
             }
         }

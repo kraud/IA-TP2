@@ -68,4 +68,8 @@ public class Regla{
         return novelty;
     }
 
+    public String toString() {
+        return String.valueOf(this.id);
+    }
+
 }

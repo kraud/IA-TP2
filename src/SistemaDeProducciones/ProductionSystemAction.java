@@ -13,9 +13,11 @@ import domain.Regla;
 public class ProductionSystemAction extends frsf.cidisi.faia.agent.Action {
 
     Regla rule;
+    String log;
 
-    public ProductionSystemAction(Regla r){
+    public ProductionSystemAction(Regla r, String logDeLasFases){
         rule = r;
+        log = logDeLasFases;
     }
 
     @Override
@@ -35,4 +37,15 @@ public class ProductionSystemAction extends frsf.cidisi.faia.agent.Action {
         return rule;
     }
 
+    public String getLog() {
+        return log;
+    }
+
+    public void setLog(String log) {
+        this.log = log;
+    }
+
+    public void addToLog(String info) {
+        this.log = this.log + info;
+    }
 }

@@ -18,8 +18,8 @@ public class MemoriaDeProduccion {
         listaReglas.add(new Regla(Arrays.asList("NAME","SOMEONE","FAMILY"), "DO NOT ANSWER THIS", 1, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("NAME","WHAT","FAMILY"), "DO NOT ANSWER THIS", 2, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("NAME","SOMEONE","WHAT","FAMILY"), "DO NOT ANSWER THIS", 3, 1, 1, 1));
-        listaReglas.add(new Regla(Arrays.asList("NAME","TEACHER"), "DO NOT ANSWER THIS", 1, 4, 1, 1));
-        listaReglas.add(new Regla(Arrays.asList("NAME","PET"), "DO NOT ANSWER THIS", 1, 5, 1, 1));
+        listaReglas.add(new Regla(Arrays.asList("NAME","TEACHER"), "DO NOT ANSWER THIS", 4, 1, 1, 1));
+        listaReglas.add(new Regla(Arrays.asList("NAME","PET"), "DO NOT ANSWER THIS", 5, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("NAME","PET","SOMEONE","WHAT"), "DO NOT ANSWER THIS", 6, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("NAME","PET","WHAT"), "DO NOT ANSWER THIS", 7, 1, 1, 1));
 
@@ -28,7 +28,7 @@ public class MemoriaDeProduccion {
         listaReglas.add(new Regla(Arrays.asList("WHAT","PLACE","SOMEONE"), "DO NOT ANSWER THIS", 9, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("WHAT","PLACE","BORN"), "DO NOT ANSWER THIS", 10, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("WHAT","PLACE","SOMEONE","BORN"), "DO NOT ANSWER THIS", 11, 1, 1, 1));
-        listaReglas.add(new Regla(Arrays.asList("WHAT","FAMILY"), "DO NOT ANSWER THIS", 1, 12, 1, 1));
+        listaReglas.add(new Regla(Arrays.asList("WHAT","FAMILY"), "DO NOT ANSWER THIS", 12, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("WHAT","PLACE","FAMILY"), "DO NOT ANSWER THIS", 13, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("WHAT","PLACE","FAMILY","SOMEONE"), "DO NOT ANSWER THIS", 14, 1, 1, 1));
         listaReglas.add(new Regla(Arrays.asList("WHAT","PLACE","NAME"), "DO NOT ANSWER THIS", 15, 1, 1, 1));

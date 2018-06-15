@@ -5,9 +5,9 @@ package SistemaDeProducciones;
         import java.util.StringTokenizer;
 
 public class MemoriaDeTrabajo {
-    private static final String conTildes = "��������������";
+    private static final String conTildes = "ÁáÉéÍíÓóÚúÑñÜü";
     private static final String sinTildes = "AaEeIiOoUuNnUu";
-    private static final String puntuacion = ",.;:�?�!()'$%&";
+    private static final String puntuacion = ",.;:¿?¡!()'$%&";
 
     public static Set<String> convertir(String oracion){
         Set<String> listaClaves = new HashSet<String>();

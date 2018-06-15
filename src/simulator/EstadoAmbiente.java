@@ -21,7 +21,7 @@ public class EstadoAmbiente extends EnvironmentState {
 
     @Override
     public String toString() {
-        String str = "Se escribi�: "+this.oracion;
+        String str = "Se escribio: "+this.oracion;
         return str;
     }
 

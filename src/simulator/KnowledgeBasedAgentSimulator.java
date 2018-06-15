@@ -38,7 +38,7 @@ public class KnowledgeBasedAgentSimulator extends frsf.cidisi.faia.simulator.Sim
 
         Perception perception;
         Action action = null;
-        //TODO Futuro: Esta hecho para el ChatBot pero deber�a incluirse el m�todo learn en la clase agente.
+        //TODO Futuro: Esta hecho para el ChatBot pero deberia incluirse el metodo learn en la clase agente.
         ChatbotAgent agent;
         agent = (ChatbotAgent) this.getAgents().firstElement();
 
@@ -51,7 +51,6 @@ public class KnowledgeBasedAgentSimulator extends frsf.cidisi.faia.simulator.Sim
         System.out.println("Environment: " + environment);
         System.out.println(agent.getAgentState().toString());
 
-        //System.out.println("Asking the agent that start the learning process...");
         try {
             action = agent.learn();
         } catch (Exception e) {
@@ -59,28 +58,18 @@ public class KnowledgeBasedAgentSimulator extends frsf.cidisi.faia.simulator.Sim
         }
 
         if (action == null){
-            //System.out.println("\nRule to execute: None");
             mensaje.add("** no privacy violations detected **");
         }
         else{
             act = (ProductionSystemAction) action;
-            //System.out.println("\nRule to execute: " + act.getRegla().getId());
+            // Agregamos en primer lugar la respuesta que dara el agente
             mensaje.add(act.getRegla().getRespuesta());
+            // Agregamos en segundo lugar los detalles de las 3 fases
+            mensaje.add(act.getLog());
         }
         System.out.println();
 
         this.ruleReturned(agent, action);
-        //contador ++;
-        //EL WHILE DEBE SER HASTA QUE SALGA Y NO HASTA QUE TERMINE DE "APRENDER"
-        //} while (!this.finishForRule(action) && !this.finishForAgentState(agent));
-        //} while(contador<10);
-        // Check what happened.
-        /*if (this.finishForRule(action)) {
-            System.out.println("The agent has executed the finish rule.");
-        } else {
-            System.out.println("The agent has finished learning!");
-        }*/
-        // Leave a blank line
         System.out.println();
 
         // This call can be moved to the Simulator class
@@ -95,12 +84,12 @@ public class KnowledgeBasedAgentSimulator extends frsf.cidisi.faia.simulator.Sim
     }
 
     protected boolean finishForAgentState(Agent agent) {
-        // TODO Futuro: Ver como deber� ser este m�todo
+        // TODO Futuro: Ver como deberia ser este metodo
         return false;
     }
 
     protected boolean finishForRule(Action action) {
-        // TODO Futuro: Ver como deber� ser este m�todo
+        // TODO Futuro: Ver como deberia ser este metodo
         if(action == null){
             return false;
         }
@@ -120,7 +109,7 @@ public class KnowledgeBasedAgentSimulator extends frsf.cidisi.faia.simulator.Sim
     }
 
     protected void updateState(Action action) {
-        //TODO Futuro: Esta hecho para el ChatBot pero deber�a incluirse en otro lugar el metodo requerido.
+        //TODO Futuro: Esta hecho para el ChatBot pero deberia incluirse en otro lugar el metodo requerido.
         this.getEnvironment().updateState(((ChatbotAgent) agents.elementAt(0)).getAgentState(), action);
     }
 
