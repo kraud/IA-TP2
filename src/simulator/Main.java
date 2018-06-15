@@ -27,6 +27,7 @@ public class Main extends JFrame{
 
     JButton enviar = new JButton("ENVIAR");
 
+    int aux = 0;
 
     public Main() {
         setResizable(false);
@@ -73,7 +74,8 @@ public class Main extends JFrame{
         logSP.setViewportView(logFases);
 
         // Panel de cargado de mensaje
-        mensaje.setText("Ingrese aqui la percepcion del agente.");
+        mensaje.setText(" ingrese aqui la percepcion del agente");
+        mensaje.setFont(new Font("Segoe UI Historic", Font.ITALIC, 11));
         mensaje.setBounds(25, 370, 529, 91);
         getContentPane().add(mensaje);
         mensaje.setColumns(10);
@@ -96,6 +98,10 @@ public class Main extends JFrame{
                 mensaje.setText(mensaje.getText());
             }
             public void keyPressed(KeyEvent e){
+                if(aux == 0){
+                    aux++;
+                    mensaje.setText("");
+                }
                 if(e.getKeyCode() == KeyEvent.VK_ENTER){
                     buscarRespuesta();
                 }
@@ -105,6 +111,7 @@ public class Main extends JFrame{
         mensaje.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent fe) {
+                mensaje.setFont(new Font("Arial", Font.PLAIN, 12));
                 mensaje.setText("");
             }
         });
@@ -139,19 +146,26 @@ public class Main extends JFrame{
                 log = resultados.get(1);
             }
 
-            respuesta.setText(respuesta.getText()+time+"    El agente detecta la siguiente interaccion:\n      " + oracionAux);
-            respuesta.setText(respuesta.getText()+"\n");
+            respuesta.setText(respuesta.getText()+time+"    <Percepcion>\n      " + oracionAux);
+            respuesta.setText(respuesta.getText()+"\n \n");
 
             if(rta.equals("** no privacy violations detected **")){ // para que cuando no existan problemas, no diga "accion a realizar"
                 respuesta.setText(respuesta.getText()+time+" :\n      " + rta);
             }
             else{
-                respuesta.setText(respuesta.getText()+time+"    Accion a realizar:\n      " + rta);
+                respuesta.setText(respuesta.getText()+time+"    <Accion>\n      " + rta);
             }
-            logFases.setText(log + "\n");
 
-            respuesta.setText(respuesta.getText()+"\n");
+            logFases.setText(log + "\n");
+            respuesta.setText(respuesta.getText() + "\n");
+
+            for(int k=0; k <= rta.length(); k++){
+                respuesta.setText(respuesta.getText() + "--");
+            }
+            respuesta.setText(respuesta.getText() + "\n");
+
             mensaje.setText("Ingrese una nueva percepcion.");
+            aux = 0;
             enviar.setFocusPainted(true);
 
         }
