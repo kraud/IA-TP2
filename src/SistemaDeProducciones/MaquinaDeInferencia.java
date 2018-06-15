@@ -36,7 +36,10 @@ public class MaquinaDeInferencia extends Solve{
         Regla r;
         String logDeFases = "";
 
-        // TODO: Agregar en cada etapa un String detallando lo sucedido y añadirlo al log de la Action
+        if(problema.getPalabrasClaves() != null){
+            logDeFases = "Palabras clave detectadas: " + problema.getPalabrasClaves() + "\n" + "\n";
+        }
+
         /////////////////////////////
         // PRIMERA FASE:    Cotejo //
         /////////////////////////////
@@ -47,7 +50,7 @@ public class MaquinaDeInferencia extends Solve{
             return null;
         }
         else{
-            logDeFases = "Reglas activas: " + activeRules.toString();
+            logDeFases = logDeFases + "Reglas activas: " + activeRules.toString() + "\n";
         }
 
         /////////////////////////////////////////////
@@ -55,12 +58,11 @@ public class MaquinaDeInferencia extends Solve{
         /////////////////////////////////////////////
         for(Criteria i : criteria){
             Criteria actualCriteria = i;
-            System.out.println("Criterio: " + actualCriteria.toString());
-            logDeFases = logDeFases + "\nCriterio:" + actualCriteria.toString();
+            System.out.println("\nCriterio: " + actualCriteria.toString());
+            logDeFases = logDeFases + "\nCriterio:" + actualCriteria.toString() + "\n";
             List<Regla> finalRules = actualCriteria.apply(activeRules);
             if(finalRules.size()==0){
-                //System.out.print("Reglas en Conflicto: -");
-                System.out.print("No hay reglas para aplicar");
+                System.out.print( "\n" + "No hay reglas para aplicar" + "\n");
             }
             else{
                 System.out.print("\nReglas en Conflicto: ");
@@ -69,6 +71,7 @@ public class MaquinaDeInferencia extends Solve{
                     System.out.print("("+j.getId()+")");
                     logDeFases = logDeFases + "("+j.getId()+")";
                 }
+                logDeFases = logDeFases + "\n";
                 activeRules = finalRules;
                 if(activeRules.size()==1){
                     break;
@@ -80,7 +83,7 @@ public class MaquinaDeInferencia extends Solve{
         ////////////////////////////////
         r = activeRules.get(0);
         this.ejecutar(r);
-        logDeFases = logDeFases + "\nRegla a ejecutar: " + r.getId();
+        logDeFases = logDeFases + "\nRegla a ejecutar: " + r.getId() + "\n";
         return new ProductionSystemAction(r,logDeFases);
     }
 

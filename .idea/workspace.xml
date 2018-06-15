@@ -2,101 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b5a9887-7942-4e83-bd5d-2fea0a67635f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_netbeans_modules_java_j2seproject_copylibstask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_netbeans_modules_java_j2seproject_copylibstask1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2-IA/SistemaDeProducciones/MaquinaDeInferencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2-IA/SistemaDeProducciones/MaquinaDeInferencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2-IA/SistemaDeProducciones/MemoriaDeTrabajo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2-IA/SistemaDeProducciones/MemoriaDeTrabajo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP2-IA/simulator/EstadoAmbiente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP2-IA/simulator/EstadoAmbiente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/Action.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/ActionFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/Agent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/GoalBasedAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/NoAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/Perception.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/PrologConnector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/planning/PlanningAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/planning/PlanningBasedAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/planning/PlanningBasedAgentState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/reactive/ReactiveAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/reactive/ReactiveBasedAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/reactive/ReactiveBasedAgentState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/search/GoalTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/search/Problem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/search/SearchAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/search/SearchBasedAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/search/SearchBasedAgentState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/situationcalculus/KnowledgeBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/situationcalculus/SituationCalculusAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/situationcalculus/SituationCalculusBasedAgent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/agent/situationcalculus/SituationCalculusPerception.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/environment/Environment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/environment/MatlabEnvironment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/exceptions/LatexOutputException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/exceptions/PlanningException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/exceptions/PrologConnectorException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/exceptions/SituationCalculusException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/GoalBasedAgentSimulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/PlanningBasedAgentSimulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/ReactiveBasedAgentSimulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/SearchBasedAgentSimulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/Simulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/SituationCalculusBasedAgentSimulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/events/EventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/events/EventType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/events/IterationFinishedEventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/events/SimulationFinishedEventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/simulator/events/SimulatorEventNotifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/Solve.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/planning/Planning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/AStarSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/BreathFirstSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/DepthFirstSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/DummyEstimatedCostFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/DummyStepCostFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/GreedySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/IEstimatedCostFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/IInitialCostFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/IStepCostFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/InformedSearchStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/NTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/Strategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/search/UniformCostSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/solver/situationcalculus/SituationCalculus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/AgentState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/EnvironmentState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/MatlabEnvironmentState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/DataStructure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/List.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/Matrix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/Queue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/state/datastructure/Simple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/Constantes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/FileOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/GraphvizTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/LatexOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/PdfFilesFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/PrintOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/TempFilesFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/TexFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/TreeMLWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/XMLWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/faia/frsf/cidisi/faia/util/XmlTree.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SistemaDeProducciones/MaquinaDeInferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaDeProducciones/MaquinaDeInferencia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SistemaDeProducciones/ProductionSystemAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaDeProducciones/ProductionSystemAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Regla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Regla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulator/ChatbotAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator/ChatbotAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulator/EstadoAmbiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator/EstadoAmbiente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulator/KnowledgeBasedAgentSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator/KnowledgeBasedAgentSimulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/simulator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulator/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -109,72 +19,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/simulator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="135" column="38" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
+            <state relative-caret-position="442">
+              <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
               <folding>
-                <element signature="e#1535#1676#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#1978#2119#0" expanded="true" />
+                <element signature="e#2118#2119#0" expanded="true" />
                 <element signature="e#1800#1801#0" expanded="true" />
                 <element signature="e#1880#1881#0" expanded="true" />
+                <element signature="e#3174#3317#0" expanded="true" />
+                <element signature="e#3316#3317#0" expanded="true" />
                 <element signature="e#2098#2305#0" expanded="true" />
                 <element signature="e#2304#2305#0" expanded="true" />
+                <element signature="e#5496#5778#0" expanded="true" />
+                <element signature="e#5777#5778#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_80/src.zip!/java/util/ArrayList.java">
+      <file leaf-file-name="MemoriaDeProduccion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="410" selection-start-line="410" selection-end-line="410" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KnowledgeBasedAgentSimulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/simulator/KnowledgeBasedAgentSimulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatbotAgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/simulator/ChatbotAgent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="22" column="80" lean-forward="true" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
               <folding>
-                <element signature="e#1233#1234#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EstadoChatbot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/simulator/EstadoChatbot.java">
+      <file leaf-file-name="MemoriaDeTrabajo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-              <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1086#1087#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="578">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaquinaDeInferencia.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MaquinaDeInferencia.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MaquinaDeInferencia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+            <state relative-caret-position="-126">
+              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Problema.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/Problema.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -182,8 +83,8 @@
       <file leaf-file-name="Regla.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/Regla.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#1670#1671#0" expanded="true" />
                 <element signature="e#1727#1728#0" expanded="true" />
@@ -195,8 +96,8 @@
       <file leaf-file-name="ProductionSystemAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/ProductionSystemAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="663">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="e#877#878#0" expanded="true" />
                 <element signature="e#904#905#0" expanded="true" />
@@ -204,8 +105,6 @@
                 <element signature="e#976#977#0" expanded="true" />
                 <element signature="e#1014#1015#0" expanded="true" />
                 <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1089#1090#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -243,14 +142,14 @@
         <option value="$PROJECT_DIR$/src/simulator/EstadoChatbot.java" />
         <option value="$PROJECT_DIR$/src/SistemaDeProducciones/BaseDeConocimiento.java" />
         <option value="$PROJECT_DIR$/src/simulator/EstadoAmbiente.java" />
-        <option value="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java" />
-        <option value="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java" />
         <option value="$PROJECT_DIR$/src/simulator/ChatbotAgent.java" />
         <option value="$PROJECT_DIR$/src/simulator/KnowledgeBasedAgentSimulator.java" />
         <option value="$PROJECT_DIR$/src/domain/Regla.java" />
+        <option value="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java" />
+        <option value="$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java" />
         <option value="$PROJECT_DIR$/src/SistemaDeProducciones/ProductionSystemAction.java" />
-        <option value="$PROJECT_DIR$/src/simulator/Main.java" />
         <option value="$PROJECT_DIR$/src/SistemaDeProducciones/MaquinaDeInferencia.java" />
+        <option value="$PROJECT_DIR$/src/simulator/Main.java" />
       </list>
     </option>
   </component>
@@ -292,6 +191,12 @@
               <item name="TP2-IA" type="b2602c69:ProjectViewProjectNode" />
               <item name="TP2-IA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP2-IA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP2-IA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TP2-IA" type="b2602c69:ProjectViewProjectNode" />
@@ -413,12 +318,12 @@
       <workItem from="1528862817610" duration="483000" />
       <workItem from="1528863551513" duration="143000" />
       <workItem from="1528863735349" duration="2524000" />
-      <workItem from="1529011205699" duration="9903000" />
+      <workItem from="1529011205699" duration="20132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40766000" />
+    <option name="totallyTimeSpent" value="50995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,18 +348,18 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3273743" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3273743" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32960895" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23027718" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944136" visible="true" weight="0.23027718" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3273743" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Favorites" order="5" sideWeight="0.5005587" side_tool="true" weight="0.23027718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -709,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/Problema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../faia/src/frsf/cidisi/faia/agent/search/Problem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -755,27 +653,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_80/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
+        <state relative-caret-position="184">
+          <caret line="410" selection-start-line="410" selection-end-line="410" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java">
+    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/Problema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Regla.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#463#471#0" expanded="true" />
+            <element signature="e#1670#1671#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/ProductionSystemAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/simulator/EstadoChatbot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="282">
+          <caret line="33" column="64" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="64" />
           <folding>
             <element signature="e#1052#1053#0" expanded="true" />
             <element signature="e#1086#1087#0" expanded="true" />
@@ -783,10 +704,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator/KnowledgeBasedAgentSimulator.java">
+    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeProduccion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="22" column="80" lean-forward="true" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -801,60 +726,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Regla.java">
+    <entry file="file://$PROJECT_DIR$/src/simulator/KnowledgeBasedAgentSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/ProductionSystemAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_80/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="410" selection-start-line="410" selection-end-line="410" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/simulator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="135" column="38" selection-start-line="135" selection-start-column="38" selection-end-line="135" selection-end-column="38" />
-          <folding>
-            <element signature="e#1535#1676#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
-            <element signature="e#2098#2305#0" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-37">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MaquinaDeInferencia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        <state relative-caret-position="-126">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SistemaDeProducciones/MemoriaDeTrabajo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/simulator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="102" column="10" lean-forward="true" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+          <folding>
+            <element signature="e#1978#2119#0" expanded="true" />
+            <element signature="e#2118#2119#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#3174#3317#0" expanded="true" />
+            <element signature="e#3316#3317#0" expanded="true" />
+            <element signature="e#2098#2305#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+            <element signature="e#5496#5778#0" expanded="true" />
+            <element signature="e#5777#5778#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

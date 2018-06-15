@@ -26,10 +26,10 @@ public class MemoriaDeTrabajo {
             else if(siguiente.equals("PET")|| siguiente.equals("DOG")|| siguiente.equals("CAT")|| siguiente.equals("PUPPY")){
                 listaClaves.add("PET");
             }
-            else if(siguiente.equals("HOUSE")|| siguiente.equals("HOME")|| siguiente.equals("SCHOOL")|| siguiente.equals("JOB")|| siguiente.equals("NEIGHBORHOOD")|| siguiente.equals("STREET")|| siguiente.equals("TOWN")|| siguiente.equals("CITY")|| siguiente.equals("ADRESS")|| siguiente.equals("LIVE")|| siguiente.equals("APARTMENT")){
+            else if(siguiente.equals("HOUSE")|| siguiente.equals("HOME")|| siguiente.equals("SCHOOL")|| siguiente.equals("JOB")|| siguiente.equals("NEIGHBORHOOD")|| siguiente.equals("STREET")|| siguiente.equals("TOWN")|| siguiente.equals("CITY")|| siguiente.equals("ADDRESS")|| siguiente.equals("LIVE")|| siguiente.equals("APARTMENT")){
                 listaClaves.add("PLACE");
             }
-            else if(siguiente.equals("WHAT")|| siguiente.equals("WHATS")|| siguiente.equals("WHERE")|| siguiente.equals("WHERES")|| siguiente.equals("HOW")|| siguiente.equals("WHEN")|| siguiente.equals("WICH")|| siguiente.equals("WHOSE")|| siguiente.equals("WHOM")|| siguiente.equals("WHY")){
+            else if(siguiente.equals("WHAT")|| siguiente.equals("WHATS")|| siguiente.equals("WHERE")|| siguiente.equals("WHERES")|| siguiente.equals("HOW")|| siguiente.equals("WHEN")|| siguiente.equals("WHICH")|| siguiente.equals("WHOSE")|| siguiente.equals("WHOM")|| siguiente.equals("WHY")){
                 listaClaves.add("WHAT");
             }
             else if(siguiente.equals("YOU")|| siguiente.equals("YOUR")|| siguiente.equals("HIS")|| siguiente.equals("HER")|| siguiente.equals("THEY")|| siguiente.equals("THEM")|| siguiente.equals("SHE")|| siguiente.equals("HE")|| siguiente.equals("OUR")|| siguiente.equals("THOSE")|| siguiente.equals("IT")){
@@ -50,8 +50,8 @@ public class MemoriaDeTrabajo {
             else if(siguiente.equals("BANK")||siguiente.equals("MONEY")||siguiente.equals("CASH")||siguiente.equals("CREDITCARD")||siguiente.equals("CARD")||siguiente.equals("DEBITCARD")||siguiente.equals("MONEY")||siguiente.equals("BILL")||siguiente.equals("DOLLAR")||siguiente.equals("GOLD")||siguiente.equals("EXPENSIVE")){
                 listaClaves.add("MONEY");
             }
-            else if(siguiente.equals("JEWERLY")||siguiente.equals("NECKLACE")||siguiente.equals("RING")){
-                listaClaves.add("JEWERLY");
+            else if(siguiente.equals("JEWELLERY")||siguiente.equals("NECKLACE")||siguiente.equals("RING")){
+                listaClaves.add("JEWELLERY");
             }
             else if(siguiente.equals("HOBBY")||siguiente.equals("ACTIVITY")||siguiente.equals("DOING")){
                 listaClaves.add("ACTIVITY");

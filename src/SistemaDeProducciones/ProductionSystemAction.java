@@ -44,8 +44,4 @@ public class ProductionSystemAction extends frsf.cidisi.faia.agent.Action {
     public void setLog(String log) {
         this.log = log;
     }
-
-    public void addToLog(String info) {
-        this.log = this.log + info;
-    }
 }

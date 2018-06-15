@@ -1,17 +1,11 @@
 package simulator;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Calendar;
-
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.JButton;
 
 public class Main extends JFrame{
 
@@ -21,55 +15,74 @@ public class Main extends JFrame{
 
     private static final long serialVersionUID = 1L;
 
-    private JTextField mensaje = new JTextField();
+    private JTextArea mensaje = new JTextArea();
 
+    private JLabel labelRta = new JLabel("MONITOR:");
     private JTextArea respuesta = new JTextArea();
     private JScrollPane sp = new JScrollPane(respuesta);
 
+    private JLabel labelLog = new JLabel("LOG:");
     private JTextArea logFases = new JTextArea();
     private JScrollPane logSP = new JScrollPane(logFases);
 
-    JButton enviar = new JButton("Enviar");
+    JButton enviar = new JButton("ENVIAR");
+
 
     public Main() {
         setResizable(false);
 
+        // INICIALIZACION
         agent = new ChatbotAgent();
         environment = new Ambiente("");
         simulator = new KnowledgeBasedAgentSimulator(environment, agent);
 
         getContentPane().setLayout(null);
+
+        // Panel de respuesta
+        labelRta.setFont(new Font("Century Gothic", Font.BOLD, 16));
+        getContentPane().add(labelRta);
+        labelRta.setLocation(25,5);
+        labelRta.setSize(200,15);
+
         respuesta.setFont(new Font("Tahoma", Font.PLAIN, 11));
         respuesta.setRows(1);
         respuesta.setEditable(false);
-        respuesta.setBounds(25, 25, 650, 300);
+        respuesta.setBounds(25, 25, 350, 250);
         respuesta.setColumns(10);
         respuesta.setBackground(Color.WHITE);
 
-        sp.setBounds(25, 25, 679, 384);
+        sp.setBounds(25, 25, 529, 334);
         getContentPane().add(sp);
         sp.setViewportView(respuesta);
+
+        // Panel de informacion sobre las fases
+        labelLog.setFont(new Font("Century Gothic", Font.BOLD, 16));
+        getContentPane().add(labelLog);
+        labelLog.setLocation(560,5);
+        labelLog.setSize(200,15);
 
         logFases.setFont(new Font("Courier New", Font.PLAIN, 11));
         logFases.setRows(1);
         logFases.setEditable(false);
-        logFases.setBounds(725,25,350,300);
+        logFases.setBounds(560,25,350,250);
         logFases.setColumns(10);
-        logFases.setBackground(Color.CYAN);
+        logFases.setBackground(new Color(192, 192, 192));
 
-        logSP.setBounds(710,25,400,384);
+        logSP.setBounds(560,25,400,334);
         getContentPane().add(logSP);
         logSP.setViewportView(logFases);
 
-        mensaje.setBounds(25, 420, 569, 41);
+        // Panel de cargado de mensaje
+        mensaje.setText("Ingrese aqui la percepcion del agente.");
+        mensaje.setBounds(25, 370, 529, 91);
         getContentPane().add(mensaje);
         mensaje.setColumns(10);
 
-        enviar.setBounds(604, 420, 100, 41);
+        // Formato del boton de enviar
+        enviar.setBounds(610, 377, 300, 69);
+        enviar.setFont(new Font("Century Gothic", Font.BOLD, 20));
+        enviar.setBackground(new Color(217, 217, 217));
         getContentPane().add(enviar);
-
-
-
 
         enviar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
@@ -87,7 +100,13 @@ public class Main extends JFrame{
                     buscarRespuesta();
                 }
             }
+        });
 
+        mensaje.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent fe) {
+                mensaje.setText("");
+            }
         });
 
         addWindowListener(new WindowAdapter(){
@@ -97,7 +116,7 @@ public class Main extends JFrame{
                 System.exit(EXIT_ON_CLOSE);
             }
         });
-        this.setBounds(300,100,1140,500);
+        this.setBounds(300,100,990,500);
 
     }
 
@@ -120,12 +139,8 @@ public class Main extends JFrame{
                 log = resultados.get(1);
             }
 
-
             respuesta.setText(respuesta.getText()+time+"    El agente detecta la siguiente interaccion:\n      " + oracionAux);
             respuesta.setText(respuesta.getText()+"\n");
-
-            // Ingresar aca la solucion de conflictos (las reglas que matchean y los criterios que las filtran)
-
 
             if(rta.equals("** no privacy violations detected **")){ // para que cuando no existan problemas, no diga "accion a realizar"
                 respuesta.setText(respuesta.getText()+time+" :\n      " + rta);
@@ -133,10 +148,11 @@ public class Main extends JFrame{
             else{
                 respuesta.setText(respuesta.getText()+time+"    Accion a realizar:\n      " + rta);
             }
-            logFases.setText(time+":\n" + log + "\n");
+            logFases.setText(log + "\n");
 
             respuesta.setText(respuesta.getText()+"\n");
-            mensaje.setText("");
+            mensaje.setText("Ingrese una nueva percepcion.");
+            enviar.setFocusPainted(true);
 
         }
     }
@@ -152,7 +168,5 @@ public class Main extends JFrame{
                 }
             }
         });
-
-
     }
 }
