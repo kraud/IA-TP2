@@ -30,10 +30,10 @@ public class ChatbotAgent extends KnowledgeBasedAgent{
 
         listaCriterios = new ArrayList<Criteria>();
         listaCriterios.add(new NoDuplication());
-        listaCriterios.add(new Specificity());
         listaCriterios.add(new Priority());
-        listaCriterios.add(new Random());
+        listaCriterios.add(new Specificity());
         listaCriterios.add(new Novelty());
+        listaCriterios.add(new Random());
 
         listaReglas = new ArrayList<Regla>();
         cargarReglas();
