@@ -88,31 +88,49 @@ public class Main extends JFrame{
 
         enviar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                buscarRespuesta();
+                if(!mensaje.getText().equals(" ingrese aqui la percepcion del agente")){
+                    buscarRespuesta();
+                }
             }
         });
 
         mensaje.addKeyListener(new KeyAdapter() {
             @Override
             public void keyReleased(KeyEvent e) {
-                mensaje.setText(mensaje.getText());
-            }
-            public void keyPressed(KeyEvent e){
-                if(aux == 0){
-                    aux++;
+                if(!(e.getKeyCode() == KeyEvent.VK_ENTER)){
+                    mensaje.setText(mensaje.getText());
+                }else{
                     mensaje.setText("");
                 }
-                if(e.getKeyCode() == KeyEvent.VK_ENTER){
-                    buscarRespuesta();
+            }
+            public void keyPressed(KeyEvent e){
+                if(mensaje.getText() != ""){
+                    // para borrar el placeholder text
+                    if(aux == 0){
+                        aux++;
+                        mensaje.setText("");
+                        mensaje.setFont(new Font("Arial", Font.PLAIN, 12));
+                    }
+                    if(e.getKeyCode() == KeyEvent.VK_ENTER){
+                        if(!mensaje.getText().equals(" ingrese aqui la percepcion del agente")){
+                            buscarRespuesta();
+                        }
+                    }
                 }
             }
         });
 
         mensaje.addFocusListener(new FocusAdapter() {
             @Override
-            public void focusGained(FocusEvent fe) {
+            public void focusGained(FocusEvent feg) {
                 mensaje.setFont(new Font("Arial", Font.PLAIN, 12));
                 mensaje.setText("");
+            }
+            public void focusLost(FocusEvent fel) {
+                if (mensaje.getText().equals("")) {
+                    mensaje.setText(" ingrese aqui la percepcion del agente");
+                    mensaje.setFont(new Font("Segoe UI Historic", Font.ITALIC, 11));
+                }
             }
         });
 
@@ -164,10 +182,8 @@ public class Main extends JFrame{
             }
             respuesta.setText(respuesta.getText() + "\n");
 
-            mensaje.setText("Ingrese una nueva percepcion.");
             aux = 0;
             enviar.setFocusPainted(true);
-
         }
     }
 
