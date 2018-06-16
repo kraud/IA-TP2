@@ -21,7 +21,6 @@ public class EstadoChatbot extends AgentState {
         ChatbotPerception cbp = (ChatbotPerception) p;
         BaseDeConocimiento bdc = new BaseDeConocimiento();
 
-        //ACA SE DEFINE COMO SE VA A ACTUALIZAR EL ESTADO DEL AGENTE
         listaClaves.clear();
         listaClaves = bdc.getPalabrasClave(cbp.getOracion());
     }

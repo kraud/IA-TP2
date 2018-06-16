@@ -167,7 +167,8 @@ public class Main extends JFrame{
             respuesta.setText(respuesta.getText()+time+"    <Percepcion>\n      " + oracionAux);
             respuesta.setText(respuesta.getText()+"\n \n");
 
-            if(rta.equals("** no privacy violations detected **")){ // para que cuando no existan problemas, no diga "accion a realizar"
+            // el if esta para que cuando no existan problemas, no diga "<Accion>"
+            if(rta.equals("** no privacy violations detected **")){
                 respuesta.setText(respuesta.getText()+time+" :\n      " + rta);
             }
             else{
@@ -177,6 +178,7 @@ public class Main extends JFrame{
             logFases.setText(log + "\n");
             respuesta.setText(respuesta.getText() + "\n");
 
+            // Separador entre cada interaccion, que es tan largo como el ultimo renglo de la respuesta
             for(int k=0; k <= rta.length(); k++){
                 respuesta.setText(respuesta.getText() + "--");
             }

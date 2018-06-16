@@ -19,7 +19,7 @@ public class MemoriaDeTrabajo {
         while(tokens.hasMoreTokens()){
             siguiente = tokens.nextToken();
 
-            if(siguiente.equals("FAMILY") || siguiente.equals("MOTHER") || siguiente.equals("MOM")|| siguiente.equals("MOMMY")|| siguiente.equals("FATHER")|| siguiente.equals("DAD")|| siguiente.equals("DADDY")|| siguiente.equals("BROTHER")|| siguiente.equals("SISTER")){
+            if(siguiente.equals("FAMILY") || siguiente.equals("MOTHER") || siguiente.equals("MOM")|| siguiente.equals("MOMMY")|| siguiente.equals("FATHER")|| siguiente.equals("DAD")|| siguiente.equals("DADDY")|| siguiente.equals("BROTHER")|| siguiente.equals("SISTER")|| siguiente.equals("PARENTS")|| siguiente.equals("DADS")|| siguiente.equals("MOMS")|| siguiente.equals("BROTHERS")|| siguiente.equals("SISTERS")){
                 listaClaves.add("FAMILY");
             }
 

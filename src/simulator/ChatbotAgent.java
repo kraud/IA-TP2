@@ -52,9 +52,6 @@ public class ChatbotAgent extends KnowledgeBasedAgent{
 
         Action selectedAction = null;
         problema.setPalabrasClaves(agState.getListaClaves());
-        //Problema[] list = {problema};
-        //Aca se deben pasar las palabras claves, se pasan como un problema para que sea del tipo Object
-        //selectedAction = mdi.solve(list);
 
         try {
             selectedAction = mdi.solve(new Object[]{problema});
@@ -68,8 +65,8 @@ public class ChatbotAgent extends KnowledgeBasedAgent{
     }
 
     public void cargarReglas(){//ACA SE CARGAN LAS REGLAS
-		/*Estructura de una regla:
-		Condiciones - Then - id - specificity - priority - novelty*/
+//		Estructura de una regla:
+//		Condiciones - Then - ID - specificity - priority - novelty
         listaReglas = new BaseDeConocimiento().crearReglas();
     }
 

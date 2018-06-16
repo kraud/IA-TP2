@@ -71,7 +71,7 @@ public class MaquinaDeInferencia extends Solve{
                 System.out.print( "\n" + "No hay reglas para aplicar" + "\n");
             }
             else{
-                //
+                // para cargar el string del log con la informacion correspondiente del criterio
                 if(actualCriteria.toString() == "Specificity" || actualCriteria.toString() == "Priority") {
                     if(actualCriteria.toString() == "Specificity"){
                         logDeFases = logDeFases + "\nValor de especificidad: " + finalRules.get(0).getSpecificity();
@@ -105,17 +105,13 @@ public class MaquinaDeInferencia extends Solve{
     }
 
     protected List<Regla> match(){
-        //ACA SE DEBE HACER EL MACHEO ENTRE LA LISTA DE PALABRAS CLAVES CON TODAS LAS REGLAS PARA VER CUALES SE
-        //PUEDEN EJECUTAR
+        // Se hace el match entre la lista de palabras clave detectadas, y las palabras clave de cada regla
         List<Regla> listaReglasAplicables = new ArrayList<Regla>();
         Set<String> palabrasPercibidas = problema.getPalabrasClaves();
 
         for(Regla r : listaDeReglas){
-            //Por cada regla tengo que verificar que la secuencia de palabras sea la misma.
-            //Si es la misma entonces hay que agregar la regla a la lista a devolver.
             List<String> condiciones = r.getCondiciones();
             if(palabrasPercibidas.containsAll(condiciones)){
-                // if((condiciones.containsAll(palabrasPercibidas))&&(condiciones.size()==palabrasPercibidas.size())){
                 listaReglasAplicables.add(r);
             }
         }
@@ -124,7 +120,6 @@ public class MaquinaDeInferencia extends Solve{
 
     protected void ejecutar(Regla r){
         reglasUsadas.add(r);
-
     }
 
 }

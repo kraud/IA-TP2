@@ -26,13 +26,13 @@ public class EstadoAmbiente extends EnvironmentState {
     }
 
     public void update(AgentState ast, Regla rule) {
-        //ACA TIENE QUE ACTUALIZAR EL ESTADO DEL AMBIENTE, ES DECIR LA PANTALLA
-        //System.out.println(rule.toString());
         System.out.println("Agente dice: "+rule.getRespuesta());
     }
+
     public String getOracion() {
         return oracion;
     }
+
     public void setOracion(String oracion) {
         this.oracion = oracion;
     }
