@@ -25,6 +25,8 @@ public class Main extends JFrame{
     private JTextArea logFases = new JTextArea();
     private JScrollPane logSP = new JScrollPane(logFases);
 
+    private JLabel NCP = new JLabel("North Central Positronics");
+
     JButton enviar = new JButton("ENVIAR");
 
     int aux = 0;
@@ -85,6 +87,12 @@ public class Main extends JFrame{
         enviar.setFont(new Font("Century Gothic", Font.BOLD, 20));
         enviar.setBackground(new Color(217, 217, 217));
         getContentPane().add(enviar);
+
+        // EE
+        NCP.setFont(new Font("OCR A", Font.BOLD, 9));
+        getContentPane().add(NCP);
+        NCP.setLocation(865,0);
+        NCP.setSize(125,15);
 
         enviar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {

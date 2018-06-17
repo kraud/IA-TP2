@@ -22,7 +22,7 @@ public class ProductionSystemAction extends frsf.cidisi.faia.agent.Action {
 
     @Override
     public EnvironmentState execute(AgentState ast, EnvironmentState est){
-        //TODO Futuro: Esto esta armado para el Chatbot pero deberia incorporarse en la clase Enviroment el metodo update.
+        // Esto quedo de legacy code. Me parece que no se ejecuta nunca, pero ya estaba del ejemplo chatbot.
         EstadoAmbiente cest = (EstadoAmbiente) est;
         cest.update(ast,rule);
         return cest;

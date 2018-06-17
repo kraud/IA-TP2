@@ -23,7 +23,7 @@ public class MemoriaDeTrabajo {
                 listaClaves.add("FAMILY");
             }
 
-            else if(siguiente.equals("PET")|| siguiente.equals("DOG")|| siguiente.equals("CAT")|| siguiente.equals("PUPPY")){
+            else if(siguiente.equals("PET")|| siguiente.equals("DOG")|| siguiente.equals("DOGS")|| siguiente.equals("CAT")|| siguiente.equals("CATS")|| siguiente.equals("PUPPY")|| siguiente.equals("PUPPYS")){
                 listaClaves.add("PET");
             }
             else if(siguiente.equals("HOUSE")|| siguiente.equals("HOME")|| siguiente.equals("SCHOOL")|| siguiente.equals("JOB")|| siguiente.equals("NEIGHBORHOOD")|| siguiente.equals("STREET")|| siguiente.equals("TOWN")|| siguiente.equals("CITY")|| siguiente.equals("ADDRESS")|| siguiente.equals("LIVE")|| siguiente.equals("APARTMENT")){
@@ -44,10 +44,10 @@ public class MemoriaDeTrabajo {
             else if(siguiente.equals("BORN")||siguiente.equals("FROM")){
                 listaClaves.add("BORN");
             }
-            else if(siguiente.equals("TEACHER")){
+            else if(siguiente.equals("TEACHER")|| siguiente.equals("TEACHERS")){
                 listaClaves.add("TEACHER");
             }
-            else if(siguiente.equals("BANK")||siguiente.equals("MONEY")||siguiente.equals("CASH")||siguiente.equals("CREDITCARD")||siguiente.equals("CARD")||siguiente.equals("DEBITCARD")||siguiente.equals("MONEY")||siguiente.equals("BILL")||siguiente.equals("DOLLAR")||siguiente.equals("GOLD")||siguiente.equals("EXPENSIVE")){
+            else if(siguiente.equals("BANK")||siguiente.equals("MONEY")||siguiente.equals("CASH")||siguiente.equals("CREDITCARD")||siguiente.equals("CARD")||siguiente.equals("DEBITCARD")||siguiente.equals("BILL")||siguiente.equals("DOLLAR")||siguiente.equals("GOLD")||siguiente.equals("EXPENSIVE")){
                 listaClaves.add("MONEY");
             }
             else if(siguiente.equals("JEWELLERY")||siguiente.equals("NECKLACE")||siguiente.equals("RING")){
